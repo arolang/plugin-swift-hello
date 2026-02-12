@@ -12,6 +12,17 @@ source:
 provides:
   - type: swift-plugin
     path: Sources/
+    actions:
+      - name: Greet
+        role: own
+        verbs: [greet, hello]
+        prepositions: [with, for]
+        description: Generate a personalized greeting message
+      - name: Farewell
+        role: own
+        verbs: [farewell, goodbye]
+        prepositions: [with, for]
+        description: Generate a farewell message
 
   - type: aro-files
     path: features/
